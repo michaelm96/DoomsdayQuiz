@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Comic+Neue|Bangers|Calistoga|Press+Start+2P|Gochi Hand|Permanent+Marker|Fredoka+One|Righteous|Spicy+Rice|Lobster&display=swap" rel="stylesheet">
+    <title>How To Play</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Back</a>
+        <h1 class="howTo">How To Play</h1>
+    </div>
+    <div class="par">
+        <p>Before i explain the rule, I just want to say that i made this quiz based on algorithm devised by mathematician John H. Conway. Credit should belongs to him.</p>
+        <p>The purpose of this quiz is to find the day of the week on any given date. Did you know that 3/4(on leap year) january, 28/29(on leap year) february, 14 march, 4 april, 9 may, 6 june, 11 july, 8 August, 5 september, 10 october, 7 november, and 12 december always fall on the same day and in 2020 it is Saturday so doomsay of 2020 is Saturday.</p>
+        <table>
+            <tr>
+              <th></th>
+              <th>Jan</th>
+              <th>Feb</th>
+              <th>Mar</th>
+              <th>Apr</th>
+              <th>May</th>
+              <th>Jun</th>
+              <th>Jul</th>
+              <th>Aug</th>
+              <th>Sep</th>
+              <th>Oct</th>
+              <th>Nov</th>
+              <th>Dec</th>
+            </tr>
+            <tr>
+              <td>Doomsday</td>
+              <td>3/1 or 4/1 (on leap year)</td>
+              <td>28/2 or 29/2 (on leap year)</td>
+              <td>14/3</td>
+              <td>4/4</td>
+              <td>9/5</td>
+              <td>6/6</td>
+              <td>11/7</td>
+              <td>8/8</td>
+              <td>5/9</td>
+              <td>10/10</td>
+              <td>7/11</td>
+              <td>12/12</td>
+            </tr>
+        </table>
+        <p>To make it easier to remember for even months except february the order of the month and the date is always the same like 4/4, 6/6, 8/8, 10/10, 12/12. and for odd months except january just remember this sentence "on Pi day (3/14) i got a 9 to 5 (9/5 and 5/9) job at 7-11(7/11 and 11/7)".
+        </p>
+        <p>
+            After we know the Doomsday in one particular year we need to know Doomsday of any given year because this year's Doomsday is different than last year's or next year's Doomsday. and first there's something called anchor day of the century, anchor day of year 1800-1899 it is friday and it's index is 5 because friday is 5th day of the week and for year 1900-1999 it's wednesday with index no.3 and for year 2000-2099 it's tuesday with index no.2 and for year 2100-2199 it's sunday with index 7 or 0 because sunday is seventh or zeroth day of the week. and it repeat itself for year 2200 - 2299 it's same as 1800 - 1899, and for year 2300 - 2399 it's same as year 1900 - 1999, and so on...
+        </p>
+        <p>
+            let's put what we just learned into practice, let's take 17 August 1945 as a test case.
+            <ol>
+                <li>
+                    first take two last digit of the year and divide it by 12 and call it "X". so "X" = (45/12) = 3.
+                </li>
+                <li>
+                    and the remainder we call it "Y". "Y" = 9
+                </li>
+                <li>
+                    and then divide "Y" with 4 and call it "Z". "Z" = (9/4) = 2
+                </li>
+                <li>
+                    then sum it up X + Y + Z = 3 + 9 + 2 = 14 and because 1945 is fall between year 1900 and 1999 then plus the result with 3
+                </li>
+                <li>
+                    now result = (14 + 3) = 17 mod the result in this case 17 with 7 and we ends up 3 and the 3rd day of the week is Wednesday the doomsday of year 1945 is Wednesday
+                </li>
+                <li>
+                    now we also know that 8 August (remember 8/8) is Wednesday and 17 August is 9 days away from 8 August let's mod it with 7 and we get 2 days. and 2 days after Wednesday is Friday. so 17 august 1945 is Friday
+                </li>
+            </ol>
+            I understand that it takes time to get used to it but with enough practice you could calculate what day in any given date and maybe amaze your friends.
+        </p>
+        <p>
+            This game has 3 mode:
+            <ul>
+                <li>
+                    <span id="boldEasy">Easy mode</span>: you just need to guess day of the week only in this year (2020). (Hint: doomsday of this year is Saturday)
+                </li>
+                <li>
+                    <span id="boldMedium">Medium mode</span>: the range is upgraded. you need to guess day of the week from year 2000 - 2099. (Hint: index of year 2000 - 2099 is 2)
+                </li>
+                <li>
+                    <span id="boldHard">Hard mode</span>: the range is upgraded once again. you need to guess day of the week from year 1600 - 9999. (Congrats, not easy to get this far)
+                </li>
+            </ul>
+            and also the score is reset when you're wrong
+        </p>
+    </div>
+    <br>
+    <footer> ∿∿∿∿∿ HAVE FUN ∿∿∿∿∿</footer>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

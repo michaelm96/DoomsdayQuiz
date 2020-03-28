@@ -1,0 +1,217 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image:linear-gradient(to right,#6a82fa , #fc5c7c);;
+}
+
+
+
+h1.home{
+    color: turquoise;
+    text-align: center;
+    font-size: 355%;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 0.4em;
+    font-family: 'Bangers', cursive;
+    text-shadow: 1px 1px 5px #FFC100;
+}
+
+.container{
+    display: flex;
+}
+
+h1.play{
+    color: turquoise;
+    text-align: center;
+    font-size: 200%;
+    letter-spacing: 0.3em;
+    font-family: 'Calistoga', cursive;
+    text-shadow: 1px 1px 5px #FFC100;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container a{
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 3%;
+    background-color: transparent;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav a{
+    justify-content: start;
+    margin-left: 3%;
+    margin-top: 3%;
+    background-color: transparent;
+}
+
+.nav .howTo{
+    text-align: center;
+    justify-content: center;
+    margin-left: 18%;
+    font-family: 'Press Start 2P', cursive;
+    color: #42eff5;
+    font-size: 50px;
+}
+
+.par{
+    margin-top: 7%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 120%;
+    font-weight: 700;
+    color: #8359ff;
+    font-family: 'Dosis', cursive;
+    letter-spacing: 0.1em;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 3px solid #dddddd;
+    color: goldenrod;
+    padding: 1%;
+    text-align: center;
+  }
+
+.ml{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box{
+    width: 20%;
+    height: 10%;
+    margin: 8% auto;
+    padding: 0 1%;
+    text-align: center;
+    display: block;
+    background-color: #7D00FF;
+    border: 1px solid #7D00FF;
+    border-radius: 25%;
+}
+
+a{
+    font-size: 200%;
+    font-weight: 100;
+    color: #ffff66;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 0.09em;
+    text-decoration: none;
+}
+
+.box:hover{
+    color:#FF4500;
+}
+
+.block{
+    margin: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Calistoga', cursive;
+}
+
+.block li{
+    color: burlywood;
+    font-size: larger;
+    list-style: none;
+}
+
+#boldEasy{
+    color: mediumseagreen;
+}
+
+#boldMedium{
+    color: #ffff66;
+}
+
+#boldHard{
+    color: #FF4500;
+}
+
+.difficulty button{
+    flex-direction: row;
+    font-size: 150%;
+    font-family: 'Righteous', cursive;
+    background-color: mediumpurple;
+    text-shadow: .5px .5px 3px;
+    outline-color: #0074bd;
+    outline-width: thick;
+    margin: 0 .1em;
+}
+
+.buttonDay{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.buttonDay button{
+    font-size: 150%;
+    font-family: 'Righteous', cursive;
+    background-color: rgb(112, 187, 216);
+    text-shadow: .5px .5px 3px;
+    outline-color: #0074bd;
+    outline-width: thick;
+    border: 1px solid #ffbb00;
+    color: honeydew;
+    padding: 1% 4%;
+    margin: 2%;
+    flex-basis: 28%;
+    border-radius: 15px;
+}
+
+#easy{
+    color: mediumseagreen;
+    border-radius: 10px;
+    border : 3px solid #1f3dff;
+}
+
+#medium{
+    color: #ffff66;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#hard{
+    color: #FF4500;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.mr{
+    text-shadow: .5px .5px 3px;
+}
+
+.difficulty{
+    justify-content: flex-end;
+}
+
+#score{
+    padding: 0 .5em;
+}
+
+div.showHide{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer{
+    text-align: center;
+    font-size: 250%;
+    font-weight: 700;
+    color: #8359ff;
+    font-family: 'Dosis', cursive;
+    letter-spacing: 0.5em;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
